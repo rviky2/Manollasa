@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - DATABASE_URL=sqlite:////app/db.sqlite3
+    ports:
+      - "8000:8000"

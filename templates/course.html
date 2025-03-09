@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% load static %}
+
+<main id="main">
+    <div class=" text-center container my-5">
+
+        <img src="{{course.image.url}}"
+            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height: 438px;"
+            class="  img-fluid my-4" alt="My image"><br>
+        <a href="/register/"> <button class="btn btn-success my-4"> Apply Now</button></a>
+        <div style="grid-column: span 14;">
+            <h3>About course</h3>
+            <p align="justify">{{course.description}}
+            </p>
+            <h3>Eligibility</h3>
+            <ul>
+                {% for eligible in eligibility %}
+                <li><p align="justify">{{eligible}}  </p></li>
+                {% endfor %}
+            </ul>
+
+
+        </div>
+        </div>
+</main>
+
+
+{% endblock body %}

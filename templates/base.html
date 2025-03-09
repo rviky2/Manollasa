@@ -1,0 +1,151 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{name}}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static '/assets/css/style.css'%}" rel="stylesheet">
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container-fluid">
+
+      <div class="row  grid text-center justify-content-center align-items-center">
+        <div class="col-xl-11 d-flex align-items-center justify-content-between">
+          <h1 class="logo"><img src="{% static '/assets/img/logo.png' %}" class="rounded-circle"><a href="/"
+              color="black"> Manollasa</a></h1>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+
+
+  {% block body %}
+
+  {% endblock body %}
+
+
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Manollasa</h3>
+            <p>Our platform offers a wide range of courses, covering various subjects and skill levels, taught by
+              experienced educators and industry professionals. Whether you are looking to enhance your career
+              prospects, pursue a personal interest, or simply gain new knowledge, we have something for everyone.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Manollasa ODL Education <br>
+              JSS Karnataka Open School<br>
+              Shree Krupe,Kalikamba Street,Santhebennur<br>
+              Davanagere(DIST.)-577 552 Karnataka, India <br>
+              <strong>Phone:</strong> 9663875378, 9113281195<br>
+              <strong>Email:</strong>manollasadisedu@gmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Stay updated with the latest news, trends and exclusive offers! Subscribe to our newsletter now and never
+              miss out on the action. Get ready for a seamless and informative experience, delivered straight to your
+              inbox.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Manollasa</strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="{% static '/assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static '/assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static '/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static '/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static '/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static '/assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static '/assets/js/main.js' %}"></script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
